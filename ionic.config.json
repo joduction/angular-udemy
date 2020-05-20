@@ -1,0 +1,7 @@
+{
+  "name": "angular-udemy",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
