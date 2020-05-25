@@ -2,20 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'recipes', pathMatch: 'full' },
+  { path: '', redirectTo: '', pathMatch: 'full'},
   {
-    path: 'recipes',
-    children: [
-      {
-        path: '',
-        loadChildren: () => import('./recipes/recipes.module').then(m => m.RecipesPageModule)
-      },
-      {
-        path: ':recipeId',
-        loadChildren:
-          './recipes/recipe-detail/recipe-detail.module#RecipeDetailPageModule'
-      }
-    ]
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then( m => m.AuthPageModule)
   }
 ];
 
