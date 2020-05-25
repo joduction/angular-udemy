@@ -5,3 +5,4 @@ android
 .gradle
 .vscode
 ios
+.gitignore
